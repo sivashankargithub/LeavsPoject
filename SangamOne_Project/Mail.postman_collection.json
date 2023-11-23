@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "f994645d-1aea-4feb-a16e-76c9b20118ae",
+		"name": "Mail",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30209566"
+	},
+	"item": [
+		{
+			"name": "MailSend",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\":\"sivashankarchandrappa@gmail.com\",\r\n    \"subject\":\"TEST MAIL\",\r\n    \"body\":\"Dear Sivashankar, It is a test mail\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/sendemail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"sendemail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
